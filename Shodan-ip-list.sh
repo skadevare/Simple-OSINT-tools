@@ -11,5 +11,5 @@ read varoutput
 echo "start"
 while read p
 do
-        shodan host ${p}>>$varoutput
+        shodan host ${p} --history >>$varoutput
 done<$varfilelist
